@@ -1,0 +1,526 @@
+/* ABAJO DE ESTA LINEA COLORES CON CLASE */
+.Azul {
+    color: blue;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Verde {
+    color: green;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Blanco {
+    color: #000;
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 10px;
+}
+
+.Gradient {
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(blue, red);
+    border-radius: 10px;
+}
+/* ARRIBA DE ESTA LINEA COLORES CON CLASE */
+
+
+
+/* ABAJO DE ESTA LINEA ESTILOS GENERALES */
+* {
+    margin: 0;
+    box-shadow: border-box;
+}
+/* ARRIBA DE ESTA LINEA ESTILOS GENERALES */
+
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 90px 20px 0;
+    background: #83c5f7;
+}
+
+
+
+/* EL CONTENEDOR PRINCIPAL DEL MENU HAMBURGUESA */
+.header {
+    background: linear-gradient(yellow, blue, red);
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* EL CONTENEDOR PRINCIPAL DEL MENU HAMBURGUESA */
+
+
+
+/* EL CONTENEDOR SECUNDARIO DEL MENU HAMBURGUESA */
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 992px;
+    margin: 0 auto;
+}
+/* EL CONTENEDOR SECUNDARIO DEL MENU HAMBURGUESA */
+
+
+
+/* LOS ELEMENTOS A DEL MENU HAMBURGUESA */
+.nav-link {
+    color: azure;
+    text-decoration: none;
+}
+
+
+/* ESTILOS DE LOS ELEMENTOS A DEL MENU HAMBURGUESA */
+
+
+
+/* ESTILOS DEL ELEMENTO UL DEL MENU HAMBURGUESA */
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 5px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 0;
+}
+
+.nav-menu_visible {
+    left: 0;
+}
+/* ESTILOS DEL ELEMENTO UL DEL MENU HAMBURGUESA */
+
+
+
+/* ESTILOS DEL ELEMENTO LI DEL MENU HAMBURGUESA */
+.nav-menu-item {
+    font-size: 15px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.nav-menu-item:hover {
+    transform: rotateY(360deg) scale(1.5);
+    transition: .5s;
+}
+/* ESTILOS DEL ELEMENTO LI DEL MENU HAMBURGUESA */
+
+
+
+/* COMBINACION DEL ELEMENTO UL Y LOS A DEL MENU HAMBURGUESA */
+.nav-menu-link {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background: darkgray;
+    transition: 0.5s;
+}
+/* COMBINACION DEL ELEMENTO UL Y LOS A DEL MENU HAMBURGUESA */
+
+
+
+/* ESTILOS DEL BOTON HAMBURGUESA */
+.nav-toggle {
+    color: beige;
+    background: blue;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 50;
+
+    display: none;
+}
+
+.nav-toggle {
+    display: block;
+}
+/* ESTILOS DEL BOTON HAMBURGUESA */
+
+
+
+
+/*.Redes_visible {
+    left: 0;
+}*/
+
+
+
+/* TODO ABAJO DE ESTA LINEA, ES EL MENU ADAPTABLE DEL BOTON HAMBURGUESA Y SU TEXTO */
+@media (max-width: 600px) {
+body {
+        padding-top: 70px 20px 0;
+}
+    
+.header {
+        height: 60px;
+}
+
+.header {
+        background: linear-gradient(yellow, blue, red);
+        height: 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+}
+    
+.nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        padding: 5px 0;
+
+        height: calc(100% - 40px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 0;
+}
+
+.nav-menu-item {
+    font-size: 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+    
+.nav-menu-link:hover,
+.nav-menu-link_active {
+        background: none;
+        color: #83c5f7;
+}
+
+.nav-toggle {
+        color: beige;
+        background: blue;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
+        line-height: 40px;
+        cursor: pointer;
+        z-index: 50;
+    
+        display: none;
+}
+
+.nav-toggle {
+        display: block;
+}
+
+.nav-menu_visible {
+        left: 0;
+}
+}/* TODO ARRIBA DE ESTA LINEA, ES EL MENU ADAPTABLE DEL BOTON HAMBURGUESA Y SU TEXTO */
+
+
+
+/* ABAJO DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*@media all and (min-width: 550px) {
+    .contenedor1 {
+        display: block;
+        width: 100vh;
+        margin: auto;
+        padding: 10px;
+    }
+}*/
+/* ARRIBA DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
+
+
+
+/* ABAJO DE ESTA LINEA ES DE LA SECCION OFERTAS */
+.P {
+    color: #fff;
+}
+
+.Caza .WC a {
+    background: #fff;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.Caza .WC {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+}
+
+.Caza .Whatsapp i {
+    color: green;
+}
+
+.Caza .Whatsapp:hover {
+    background: green;
+}
+
+.Caza .Whatsapp:hover i {
+    color: #fff;
+}
+
+.Ul1 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Li1 {
+    list-style: none;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.Li1:hover {
+    cursor: pointer;
+    transform: rotateX(360deg) scale(1.5);
+    transition: .5s;
+}
+/* ARRIBA DE ESTA LINEA ES DE LA SECCION OFERTAS */
+
+
+
+/*ABAJO DE ESTA LINEA ES DE LA SECCION ASESORIA */
+.W a {
+    background: #fff;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.W {
+    position: fixed;
+    right: 15px;
+    top: 50%;
+    font-size: 40px;
+}
+
+.Whatsapp i {
+    color: green;
+}
+
+.Whatsapp:hover {
+    background: green;
+}
+
+.Whatsapp:hover i {
+    color: #fff;
+}
+/*ARRIBA DE ESTA LINEA ES DE LA SECCION ASESORIA */
+
+
+
+/* ABAJO DE ESTA LINEA ES DE LA SECCION REDES SOCIALES */
+.Redes {
+    display: flex;
+    margin: auto;
+    font-size: 30px;
+    justify-content: space-between;
+    animation: palpitar 2s linear infinite alternate;
+    will-change: transform;
+}
+
+.Redes a {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #38313A;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 10px;
+}
+
+.Face i {
+    color: #3b5998;
+}
+
+.Instagram i {
+    color: #c13584;
+}
+
+.Tiktok i {
+    color: rgb(165, 42, 42);
+}
+
+.Youtube i {
+    color: rgb(255, 0, 0);
+}
+
+.Face:hover {
+    background: #3b5998;
+}
+
+.Instagram:hover {
+    background: #c13584;
+}
+
+.Tiktok:hover {
+    background: rgb(165, 42, 42);
+}
+
+.Youtube:hover {
+    background: rgb(255, 0, 0);
+}
+
+.Face:hover i {
+    color: #fff;
+}
+
+.Instagram:hover i {
+    color: #fff;
+}
+
+.Tiktok:hover i {
+    color: #fff;
+}
+
+.Youtube:hover i {
+    color: #fff;
+}
+
+@keyframes palpitar {
+    0% {
+        transform: rotate(0deg) scale(0.9);
+    }
+    50% {
+        transform: rotate(0deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(0deg) scale(0.9);
+    }
+}
+/* ARRIBA DE ESTA LINEA ES DE LA SECCION REDES SOCIALES */
+
+/* TODO ABAJO DE ESTA LINEA, ES DE LOS ESTILOS ADAPTABLES DE LAS REDES SOCIALES */
+@media (max-width: 600px) {
+    .Redes {
+        display: flex;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    .Redes a {
+        display: flex;
+        width: 33px;
+        height: 33px;
+        background: #fff;
+        color: #38313A;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        margin: 0 10px;
+    }
+}
+/* TODO ARRIBA DE ESTA LINEA, ES DE LOS ESTILOS ADAPTABLES DE LAS REDES SOCIALES */
+
+
+
+/* ABAJO DE ESTA LINEA ES DE LA SECCION ¿ QUIENES SOMOS ? */
+section p {
+    font-size: 18px;
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    background: aquamarine;
+    transition: all .2s ease-in-out;
+}
+
+section a {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    background: teal;
+    color: gold;
+}
+
+section:target p {
+    max-height: 100%;
+    padding: 10px;
+}
+/* ARRIBA DE ESTA LINEA ES DE LA SECCION ¿ QUIENES SOMOS ? */
+
+
+
+/* ABAJO DE ESTA LINEA ES DE LA SECCION ALIADOS */
+.Ul2 {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Li2 {
+    list-style: none;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.Li2:hover {
+    cursor: pointer;
+    transform: rotateY(720deg);
+    transition: 2s ease-in-out;
+}
+/* ARRIBA DE ESTA LINEA ES DE LA SECCION ALIADOS */
+
+
+
+.PDF {
+    text-align: center;
+    
+}
+
+
