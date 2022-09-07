@@ -524,3 +524,20 @@ section:target p {
 }
 
 
+
+.contenedor-video1 video {
+    width: 60%;
+}
+
+.contenedor-video1 {
+    text-align: center;
+}
+
+.contenedor-video2 video {
+    width: 60%;
+    height: 200px;
+}
+
+.contenedor-video2 {
+    text-align: center;
+}
