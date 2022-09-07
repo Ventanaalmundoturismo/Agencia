@@ -21,3 +21,18 @@ for (i = 0; i<acordeon.length; i++ ){
     this.classList.toggle("active")
    })
 }
+
+
+
+let list = document.querySelectorAll(".Redes a");
+let bg = document.querySelector("body");
+list.forEach(elements => {
+   elements.addEventListener("mouseenter", function(event){
+      let color = event.target.getAttribute("data-color");
+      bg.style.backgroundColor = color;
+   })
+   elements.addEventListener("mouseleave", function(event){
+      bg.style.backgroundColor = "#83c5f7";
+   })
+   
+})
