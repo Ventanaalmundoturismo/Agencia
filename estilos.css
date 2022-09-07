@@ -468,28 +468,51 @@ img {
 
 
 /* ABAJO DE ESTA LINEA ES DE LA SECCION ¿ QUIENES SOMOS ? */
-section p {
-    font-size: 18px;
-    overflow: hidden;
-    max-height: 0;
-    text-align: justify;
-    background: aquamarine;
-    transition: all .2s ease-in-out;
+.acordeon {
+    width: 100%;
 }
 
-section a {
+.label {
     text-align: center;
-    letter-spacing: 2px;
-    font-size: 30px;
-    text-decoration: none;
-    padding: 20px;
-    display: block;
-    background: teal;
-    color: gold;
 }
 
-section:target p {
-    max-height: 100%;
+.acordeon .contenedor-box {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contenedor-box .label {
+    position: relative;
+    padding: 10px;
+    background: midnightblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+.acordeon .contenedor-box .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.acordeon .contenedor-box.active .label::before {
+    content: "-";
+}
+
+.acordeon .contenedor-box .contenido {
+    position: relative;
+    background: tomato;
+    height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+    overflow-y: auto;
+}
+
+.acordeon .contenedor-box.active .contenido {
+    height: 100%;
     padding: 10px;
 }
 /* ARRIBA DE ESTA LINEA ES DE LA SECCION ¿ QUIENES SOMOS ? */
@@ -526,7 +549,7 @@ section:target p {
 
 
 .contenedor-video1 video {
-    width: 60%;
+    width: 50%;
 }
 
 .contenedor-video1 {
@@ -534,7 +557,7 @@ section:target p {
 }
 
 .contenedor-video2 video {
-    width: 60%;
+    width: 50%;
     height: 200px;
 }
 
