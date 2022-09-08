@@ -354,14 +354,14 @@ img {
 .Whatsapp:hover i {
     color: #fff;
 }
-
+/*
 .Redes .Whatsapp::before {
     content: attr(data-text);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 14vh;
+    font-size: 100%;
     pointer-events: none;
     font-weight: 700;
     transition: 0.5s;
@@ -371,7 +371,7 @@ img {
 .Redes .Whatsapp:hover::before {
     opacity: 0.7;
     transform: translate(-50%,calc(-50% + 200px));
-}
+}*/
 /*ARRIBA DE ESTA LINEA ES DE LA SECCION ASESORIA */
 
 
@@ -434,7 +434,7 @@ img {
 .Face:hover i {
     color: #fff;
 }
-
+/*
 .Redes .Face::before {
     content: attr(data-text);
     position: absolute;
@@ -451,12 +451,12 @@ img {
 .Redes .Face:hover::before {
     opacity: 0.7;
     transform: translate(-50%,calc(-50% + 200px));
-}
+}*/
 
 .Instagram:hover i {
     color: #fff;
 }
-
+/*
 .Redes .Instagram::before {
     content: attr(data-text);
     position: absolute;
@@ -473,12 +473,12 @@ img {
 .Redes .Instagram:hover::before {
     opacity: 0.7;
     transform: translate(-50%,calc(-50% + 200px));
-}
+}*/
 
 .Tiktok:hover i {
     color: #fff;
 }
-
+/*
 .Redes .Tiktok::before {
     content: attr(data-text);
     position: absolute;
@@ -495,12 +495,12 @@ img {
 .Redes .Tiktok:hover::before {
     opacity: 0.7;
     transform: translate(-50%,calc(-50% + 200px));
-}
+}*/
 
 .Youtube:hover i {
     color: #fff;
 }
-
+/*
 .Redes .Youtube::before {
     content: attr(data-text);
     position: absolute;
@@ -517,7 +517,7 @@ img {
 .Redes .Youtube:hover::before {
     opacity: 0.7;
     transform: translate(-50%,calc(-50% + 200px));
-}
+}*/
 
 @keyframes palpitar {
     0% {

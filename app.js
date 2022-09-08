@@ -23,7 +23,7 @@ for (i = 0; i<acordeon.length; i++ ){
 }
 
 
-
+/*
 let list = document.querySelectorAll(".Redes a");
 let bg = document.querySelector("body");
 list.forEach(elements => {
@@ -35,4 +35,4 @@ list.forEach(elements => {
       bg.style.backgroundColor = "#83c5f7";
    })
    
-})
+})*/
