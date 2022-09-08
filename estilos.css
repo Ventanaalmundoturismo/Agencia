@@ -7,10 +7,11 @@
 }
 
 .Verde {
-    color: green;
+    color: darkgreen;
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
+    font-family: cursive;
 }
 
 .Blanco {
@@ -34,7 +35,7 @@
 /* ABAJO DE ESTA LINEA ESTILOS GENERALES */
 * {
     margin: 0;
-    box-shadow: border-box;
+    box-sizing: border-box;
 }
 /* ARRIBA DE ESTA LINEA ESTILOS GENERALES */
 
@@ -97,7 +98,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    background: #2c3e50;
+    background: linear-gradient(60deg, purple, tomato);
     position: fixed;
     left: 0;
     top: 60px;
@@ -142,7 +143,7 @@ body {
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-    background: darkgray;
+    background: linear-gradient(60deg, yellow, orange);
     transition: 0.5s;
 }
 /* COMBINACION DEL ELEMENTO UL Y LOS A DEL MENU HAMBURGUESA */
@@ -200,7 +201,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin-right: 20px;
-        background: #2c3e50;
+        background: linear-gradient(60deg, purple, tomato);
         position: fixed;
         left: 0;
         top: 40px;
@@ -577,7 +578,15 @@ img {
 .acordeon .contenedor-box .label {
     position: relative;
     padding: 10px;
-    background: midnightblue;
+    background: crimson;
+    color: #fff;
+    cursor: pointer;
+}
+
+.acordeon .contenedor-box .label:hover {
+    position: relative;
+    padding: 10px;
+    background: olive;
     color: #fff;
     cursor: pointer;
 }
