@@ -43,7 +43,10 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 90px 20px 0;
-    background: #83c5f7;
+    background-image: url(pagina\ 1.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
