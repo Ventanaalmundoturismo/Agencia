@@ -575,9 +575,11 @@ img {
 }
 
 .acordeon .contenedor-box .label {
+    font-size: 25px;
+    font-family: monospace;
     position: relative;
     padding: 10px;
-    background: crimson;
+    background: blue;
     color: #fff;
     cursor: pointer;
 }
@@ -586,7 +588,7 @@ img {
     position: relative;
     padding: 10px;
     background: yellow;
-    color: #fff;
+    color: red;
     cursor: pointer;
 }
 
