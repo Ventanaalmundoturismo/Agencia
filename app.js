@@ -23,6 +23,7 @@ for (i = 0; i<acordeon.length; i++ ){
 }
 
 
+
 /*
 let list = document.querySelectorAll(".Redes a");
 let bg = document.querySelector("body");
