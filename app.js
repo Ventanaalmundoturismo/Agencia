@@ -1,4 +1,11 @@
-const navToggle = document.querySelector(".nav-toggle");
+let toggle = document.getElementById("toggle");
+toggle.onclick = function () {
+    toggle.classList.toggle("active")
+};
+
+
+
+const navToggle = document.querySelector("#toggle");
 const navMenu = document.querySelector(".nav-menu");
 
 navToggle.addEventListener("click", () => {
