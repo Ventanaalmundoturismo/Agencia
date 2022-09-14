@@ -115,6 +115,51 @@ body {
     transform: rotate(-45deg);
 }
 
+@media (max-width: 650px) {
+    #toggle {
+        background: teal;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #toggle.active {
+        background: red;
+    }
+    
+    #toggle::before {
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s
+    }
+    
+    #toggle.active::before {
+        transform: rotate(45deg);
+        box-shadow: 0 0px 0 #fff;
+    }
+    
+    #toggle::after {
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    
+    #toggle.active::after {
+        transform: rotate(-45deg);
+    }
+}
 /* EL CONTENEDOR SECUNDARIO DEL MENU HAMBURGUESA */
 .nav {
     display: flex;
@@ -544,7 +589,7 @@ img {
         transform: rotate(0deg) scale(0.9);
     }
     50% {
-        transform: rotate(0deg) scale(1.1);
+        transform: rotate(0deg) scale(1.0);
     }
     100% {
         transform: rotate(0deg) scale(0.9);
