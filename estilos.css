@@ -719,3 +719,12 @@ img {
     text-align: center;
 }
 
+.contenedor-video3 video {
+    width: 50%;
+    height: 200px;
+}
+
+.contenedor-video3 {
+    text-align: center;
+}
+
