@@ -12,10 +12,12 @@
     text-align: center;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
 }
 
 .Blanco {
-    color: #000;
+    color: #221022;
+    border-radius: 40px;
     letter-spacing: 1px;
     padding: 10px 10px 10px 10px;
 }
@@ -314,6 +316,7 @@ img {
     border-radius: 10px;
 }
 
+
 /*@media all and (min-width: 550px) {
     .contenedor1 {
         display: block;
@@ -364,7 +367,7 @@ img {
 .Ul1 {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .Li1 {
@@ -375,7 +378,7 @@ img {
 
 .Li1:hover {
     cursor: pointer;
-    transform: rotateX(360deg) scale(1.5);
+    transform: rotateX(720deg) scale(1.5);
     transition: .5s;
 }
 /* ARRIBA DE ESTA LINEA ES DE LA SECCION OFERTAS */
@@ -701,52 +704,19 @@ img {
 }
 
 
-
-.contenedor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+.video1 {
+    text-align: center;
 }
 
-.contenedor .box {
-    position: absolute;
-    width: 100%;
-    height: 90vh;
-    top: 65px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
+.video2 {
+    text-align: center;
 }
 
-.contenedor .box.box1 {
-    background: #f00;
-    clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
-}
-
-.contenedor .box.box2 {
-    background: #0f0;
-    clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
-}
-
-.contenedor .box.box3 {
-    background: #00f;
-    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
-}
-
-.contenedor .box.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
-.contenedor .box:hover {
-    z-index: 1000;
+.video3 {
+    text-align: center;
 }
 
 video {
-    width: 50%;
-    height: 500px;
+    width: 80vw;
+    height: 60vh;
 }
-
