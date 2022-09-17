@@ -702,29 +702,51 @@ img {
 
 
 
-.contenedor-video1 video {
+.contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor .box {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 65px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.contenedor .box.box1 {
+    background: #f00;
+    clip-path: polygon(0 0, 33% 0, 33% 100%, 0% 100%);
+}
+
+.contenedor .box.box2 {
+    background: #0f0;
+    clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
+}
+
+.contenedor .box.box3 {
+    background: #00f;
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+}
+
+.contenedor .box.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.contenedor .box:hover {
+    z-index: 1000;
+}
+
+video {
     width: 50%;
-}
-
-.contenedor-video1 {
-    text-align: center;
-}
-
-.contenedor-video2 video {
-    width: 50%;
-    height: 200px;
-}
-
-.contenedor-video2 {
-    text-align: center;
-}
-
-.contenedor-video3 video {
-    width: 50%;
-    height: 200px;
-}
-
-.contenedor-video3 {
-    text-align: center;
+    height: 500px;
 }
 

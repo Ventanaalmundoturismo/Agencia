@@ -31,6 +31,13 @@ for (i = 0; i<acordeon.length; i++ ){
 
 
 
+let box = document.querySelectorAll(".box");
+box.forEach(popup => popup.addEventListener("click", () => {
+    popup.classList.toggle("active")
+}))
+
+
+
 /*
 let list = document.querySelectorAll(".Redes a");
 let bg = document.querySelector("body");
