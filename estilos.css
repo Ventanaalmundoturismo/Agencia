@@ -308,6 +308,17 @@ body {
 
 
 
+/* TODO ABAJO DE ESTA LINEA SON LOS ESTILOS GENERALES DE LAS IMAGENES */
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* TODO ARRIBA DE ESTA LINEA SON LOS ESTILOS GENERALES DE LAS IMAGENES */
+
+
+
 /* ABAJO DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
 .slider {
     width: 100%;
@@ -329,7 +340,7 @@ body {
     list-style: none;
 }
 
-.slider img {
+.slider .img-calesita {
     width: 50%;
     display: flex;
     margin: 0 auto;
@@ -351,7 +362,7 @@ body {
 
 
 @media (max-width: 650px) {
-    .slider img {
+    .slider .img-calesita {
         width: 100%;
         display: flex;
         margin: 0 auto;
