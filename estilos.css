@@ -169,8 +169,9 @@ body {
 
 /* LOS ELEMENTOS A DEL MENU HAMBURGUESA */
 .nav-link {
-    color: azure;
+    color: #221022;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -187,7 +188,7 @@ body {
 .nav-menu {
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(60deg, purple, tomato);
+    background: linear-gradient(90deg, purple, blue);
     position: fixed;
     top: 70px;
     width: 100%;
@@ -259,7 +260,9 @@ body {
 .nav-menu {
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(60deg, blue, red);
+        background-image: url(FONDOB.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
         position: fixed;
         top: 50px;
         width: 100%;
@@ -766,3 +769,30 @@ video {
 
 
 
+/* TODO ABAJO DE ESTA LINEA ES DE LA ANIMACION DE AVION */
+.back {
+    position: relative;
+    float: left;
+    width: 50px;
+    height: 50px;
+    animation: mover 6s linear;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    margin-top: 25%;
+}
+
+@keyframes mover {
+
+    0% {
+        transform: scale(-11.0);
+    }
+
+    10% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(800px) scale(8.0);
+    }
+}
+/* TODO ARRIBA DE ESTA LINEA ES DE LA ANIMACION DE AVION */
