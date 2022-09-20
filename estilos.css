@@ -43,7 +43,7 @@
     animation-timing-function: ease-in linear;
     animation-iteration-count: 2;
     display: flex;
-    bottom: -50%;
+    bottom: -1px;
     right: 50%;
 }
 
@@ -259,7 +259,7 @@ body {
 
 /* LOS ELEMENTOS A DEL MENU HAMBURGUESA */
 .nav-link {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -278,7 +278,9 @@ body {
 .nav-menu {
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, purple, blue);
+    background-image: url(foto9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: fixed;
     top: 70px;
     width: 100%;
@@ -300,7 +302,7 @@ body {
 
 /* ESTILOS DEL ELEMENTO LI DEL MENU HAMBURGUESA */
 .nav-menu-item {
-    font-size: 15px;
+    font-size: 25px;
     line-height: 60px;
     text-transform: uppercase;
 }
@@ -718,24 +720,22 @@ img {
     font-family: monospace;
     position: relative;
     padding: 10px;
-    background: blue;
-    color: #fff;
+    color: #221022;
     cursor: pointer;
 }
 
 .acordeon .contenedor-box .label:hover {
     position: relative;
     padding: 10px;
-    background: yellow;
     color: red;
     cursor: pointer;
 }
 
 .acordeon .contenedor-box .label::before {
+    position: relative;
     content: "+";
-    position: absolute;
     top: 50%;
-    right: 20px;
+    left: -10px;
     transform: translateY(-50%);
     font-size: 1.5em;
 }
@@ -746,7 +746,6 @@ img {
 
 .acordeon .contenedor-box .contenido {
     position: relative;
-    background: tomato;
     height: 0;
     overflow: hidden;
     transition: 0.1s;
