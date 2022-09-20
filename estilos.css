@@ -259,7 +259,7 @@ body {
 
 /* LOS ELEMENTOS A DEL MENU HAMBURGUESA */
 .nav-link {
-    color: #221022;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -363,6 +363,12 @@ body {
     line-height: 60px;
     text-transform: uppercase;
 }
+
+.nav-link {
+    color: #221022;
+    text-decoration: none;
+    text-transform: uppercase;
+}
     
 .nav-menu-link:hover,
 .nav-menu-link_active {
@@ -372,7 +378,6 @@ body {
 
 .nav-toggle {
         color: beige;
-        background: blue;
         border: none;
         font-size: 30px;
         padding: 0 20px;
