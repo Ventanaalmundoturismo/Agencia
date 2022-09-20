@@ -705,7 +705,7 @@ img {
 .acordeon {
     display: block;
     margin: 0 auto;
-    width: 20%;
+    width: 50%;
 }
 
 .label {
@@ -756,8 +756,14 @@ img {
 }
 
 .acordeon .contenedor-box.active .contenido {
-    height: 1%;
+    height: 100%;
     padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .acordeon {
+        width: 100%;
+    }
 }
 /* ARRIBA DE ESTA LINEA ES DE LA SECCION ¿ QUIENES SOMOS ? */
 
