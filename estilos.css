@@ -63,60 +63,6 @@
 
 
 
-/* ABAJO DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL 
-.slider {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation:cambio 20s infinite alternate;
-    animation-timing-function: linear;
-}
-
-.slider li {
-    width: 100%;
-    list-style: none;
-}
-
-.slider .img-calesita {
-    width: 50%;
-    display: flex;
-    margin: 0 auto;
-}
-
-@keyframes cambio {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
-
-
-@media (max-width: 650px) {
-    .slider .img-calesita {
-        width: 80%;
-        height: 90%;
-        display: flex;
-        margin: 0 auto;
-    }
-    }
-/* ARRIBA DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
-
-
-
 /* ABAJO DE ESTA LINEA ESTILOS GENERALES */
 * {
     margin: 0;
@@ -394,6 +340,10 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+}
+
+.img-temporal {
+    text-align: center;
 }
 /* TODO ARRIBA DE ESTA LINEA SON LOS ESTILOS GENERALES DE LAS IMAGENES */
 
