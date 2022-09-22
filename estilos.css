@@ -34,7 +34,7 @@
 
 
 
-/* TODO ABAJO DE ESTA LINEA ES DE LA ANIMACION DE AVION */
+/* TODO ABAJO DE ESTA LINEA ES DE LA ANIMACION DEL AVION */
 .back {
     position: absolute;
     width: 50px;
@@ -65,11 +65,11 @@
         transform: translateY(-850px) scale(8.0);
     }
 }
-/* TODO ARRIBA DE ESTA LINEA ES DE LA ANIMACION DE AVION */
+/* TODO ARRIBA DE ESTA LINEA ES DE LA ANIMACION DEL AVION */
 
 
 
-/* ABAJO DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
+/* ABAJO DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL Y SU ANIMACION*/
 .imagenes-principales {
     width: 90vw;
     height: 60vh;
@@ -101,7 +101,7 @@
 
     100% {background-image: url(Ofertas/Crucero.jpg);}
 }*/
-/* ARRIBA DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL */
+/* ARRIBA DE ESTA LINEA ES DE LA IMAGEN PRINCIPAL Y SU ANIMACION */
 
 
 
@@ -293,7 +293,7 @@ body {
 }
 
 .nav-menu-item:hover {
-    transform: rotateY(360deg) scale(1.5);
+    transform: scale(1.5);
     transition: .5s;
 }
 /* ESTILOS DEL ELEMENTO LI DEL MENU HAMBURGUESA */
@@ -347,7 +347,7 @@ body {
 
 .nav-menu-item {
     font-size: 10px;
-    line-height: 60px;
+    line-height: 45px;
     text-transform: uppercase;
 }
 
@@ -392,10 +392,6 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-}
-
-.img-temporal {
-    text-align: center;
 }
 /* TODO ARRIBA DE ESTA LINEA SON LOS ESTILOS GENERALES DE LAS IMAGENES */
 
@@ -458,6 +454,24 @@ img {
 
 
 /*ABAJO DE ESTA LINEA ES DE LA SECCION ASESORIA */
+.imagen-asesoria {
+    width: 90vw;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+.img-asesoria {
+    width: 100%;
+    height: 100%;
+    background-image: url(VisaEU.jpeg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: animacion 20s;
+    animation-iteration-count: infinite;
+}
+
 .W a {
     background: #fff;
     display: flex;
@@ -694,7 +708,9 @@ img {
 }
 
 .label {
+    letter-spacing: 1px;
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .acordeon .contenedor-box {
@@ -709,6 +725,7 @@ img {
     padding: 10px;
     color: #221022;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 .acordeon .contenedor-box .label:hover {
@@ -782,6 +799,8 @@ img {
 }
 
 
+
+/* TODO ABAJO DE ESTA LINEA SON LOS ESTILOS DE LOS VIDEOS */
 .video1 {
     text-align: center;
 }
@@ -794,10 +813,15 @@ img {
     text-align: center;
 }
 
+.video4 {
+    text-align: center;
+}
+
 video {
     width: 80vw;
     height: 60vh;
 }
+/* TODO ARRIBA DE ESTA LINEA SON LOS ESTILOS DE LOS VIDEOS */
 
 
 
