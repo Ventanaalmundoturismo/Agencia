@@ -21,3 +21,10 @@ for (i = 0; i<acordeon.length; i++ ){
     this.classList.toggle('active')
    })
 }
+
+
+
+/* TODO ABAJO DE ESTA LINEA ES PARA TIRAR UN MENSAJE AL INICIO */
+var saludo = ('HOLA... Recuerda visitar todas nuestras secciones disponibles, para que veas todo lo que tenemos para ofrecerte. ¡ SALUDOS !');
+alert(saludo);
+/* TODO ARRIBA DE ESTA LINEA ES PARA TIRAR UN MENSAJE AL INICIO */
